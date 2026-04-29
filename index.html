@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Something Special ✨</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Quicksand:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+      <div class="loader-heart">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle music">
+      <svg
+        class="music-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          d="M9 18V5l12-2v13M9 18c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm12-3c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"
+        />
+      </svg>
+      <svg
+        class="music-icon-off"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <line x1="3" y1="3" x2="21" y2="21" />
+        <path
+          d="M9 18V5l12-2v13M9 18c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm12-3c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z"
+        />
+      </svg>
+    </button>
+    <!-- Background Music (Placeholder - user will need to add their own audio file) -->
+    <audio id="bgMusic" loop>
+      <source src="Pehli-Nazar-Mein.mp3" type="audio/mp3" />
+    </audio>
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+    <!-- Section 1: Landing Hero -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Assalam o Alaikum <span class="name-highlight">Aliya</span> 👋
+        </h1>
+        <p class="hero-subtitle">Maine tumhare liye kuch banaya hai</p>
+        <button class="cta-button" id="ctaButton">
+          Yahan click karein
+          <span class="button-glow"></span>
+        </button>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+    <!-- Section 2: Surprise Message -->
+    <section class="message-section" id="messageSection">
+      <div class="container">
+        <div class="typewriter-container">
+          <p class="typewriter-text" id="typewriterText"></p>
+          <span class="cursor">|</span>
+        </div>
+        <div class="floating-hearts" id="floatingHearts"></div>
+      </div>
+    </section>
+    <!-- Section 3: Interactive Buttons -->
+    <section class="interactive-section" id="interactiveSection">
+      <div class="container">
+        <h2 class="section-title">Toh... kaisa laga? 😊</h2>
+        <p class="section-subtitle">Pasand aaya?</p>
+        <div class="buttons-container">
+          <button class="response-button yes-button" id="yesButton">
+            HAAN 😄
+          </button>
+          <button class="response-button no-button" id="noButton">
+            NAHI 🙈
+          </button>
+        </div>
+        <!-- Success Message (Hidden initially) -->
+        <div class="success-message" id="successMessage">
+          <div class="success-content">
+            <h3>Mujhe pata tha 😌✨</h3>
+            <p>Shukriya ke tumne ye dekha ❤️</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 4: Memory Cards -->
+    <section class="memory-section" id="memorySection">
+      <div class="container">
+        <div class="memory-cards">
+          <div class="memory-card" data-delay="0">
+            <div class="card-icon">✨</div>
+            <h3>Soch Samajh Kar</h3>
+            <p>
+              Kabhi kabhi chhoti baatein sabse zyada matter karti hain. Maine
+              socha ke tumhare liye kuch alag banau.
+            </p>
+          </div>
+          <div class="memory-card" data-delay="200">
+            <div class="card-icon">🌟</div>
+            <h3>Dil Se</h3>
+            <p>
+              Ye sirf code aur design nahi hai. Ismein waqt, mehnat, aur thori
+              si himmat bhi hai tumhe muskurane ke liye.
+            </p>
+          </div>
+          <div class="memory-card" data-delay="400">
+            <div class="card-icon">💫</div>
+            <h3>Umeed Se</h3>
+            <p>
+              Mujhe umeed hai ke ye tumhare din mein thori si khushi le aaya,
+              kyunke bas yehi chahta tha.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Made with ❤️ by <span class="footer-name">Hamza</span></p>
+      <div class="footer-hearts">
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+      </div>
+    </footer>
+    <!-- Confetti Canvas -->
+    <canvas id="confettiCanvas"></canvas>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-glow" id="cursorGlow"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
