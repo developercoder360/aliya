@@ -1,2 +1,2 @@
 # aliya
-A small personal web experience built with HTML, CSS, and JavaScript — just to make someone smile 🙂
+Built with code, styled with creativity, and made to bring a smile — a small interactive web experience with a personal touch ✨
